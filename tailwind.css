@@ -1,0 +1,54 @@
+*,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+	font-family:MV_Aaamu_KF;src:url(./fonts/aammufkF.ttf)
+}
+@font-face{
+	font-family:MV_Faseyha;src:url(./fonts/MV_Faseyha.otf)
+}
+@font-face{
+	font-family:MV_Waheed_Smooth;src:url(./fonts/MVWaheedSmooth.otf)
+}
+.rtl {
+    direction: rtl;
+}
+
+.form-control {
+    @apply py-3;
+}
+
+.form-control label {
+    @apply font-dv-title-2 text-xl text-gray-800;
+}
+
+.form-control input[type="text"],
+.form-control input[type="number"],
+.form-control select,
+.form-control textarea {
+    @apply font-dv-title-2 text-base text-gray-800 border-2 border-gray-600 outline-none rounded-lg block px-3 py-2 w-full appearance-none bg-white;
+}
+
+.form-control input[type="text"]:focus,
+.form-control input[type="number"]:focus,
+.form-control select:focus,
+.form-control textarea:focus {
+    @apply border-blue-600;
+}
+
+.order-details-check,
+.order-details {
+    @apply hidden;
+}
+
+.order-details-check:checked + .order-details {
+    @apply block;
+}

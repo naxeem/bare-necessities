@@ -1,0 +1,24 @@
+{
+  "name": "bare-necessities",
+  "version": "1.0.0",
+  "description": "Basic needs order management app for shops and shopers",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss tailwind.css -o public/css/tailwind.css"
+  },
+  "keywords": [
+    "layout",
+    "design"
+  ],
+  "author": "naxeem",
+  "dependencies": {
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.3"
+  }
+}
